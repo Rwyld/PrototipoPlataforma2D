@@ -8,10 +8,10 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public GameObject Player;
     public GameObject restartPosition;
-    public MoveScript player;
+    public Player player;
     public Enemy1 enemy;
     public HealthPoints h_points;
-
+    public GameObject pause_m;
 
     private void Awake()
     {
@@ -57,11 +57,20 @@ public class GameManager : MonoBehaviour
     public void h_childs()
     {
         h_points.hearts[0].gameObject.SetActive(true);
-        h_points.hearts[1].gameObject.SetActive(true);
-        h_points.hearts[2].gameObject.SetActive(true);
-        h_points.hearts[3].gameObject.SetActive(true);
-        h_points.hearts[4].gameObject.SetActive(true);
+        //h_points.hearts[1].gameObject.SetActive(true);
+        //h_points.hearts[2].gameObject.SetActive(true);
+        //h_points.hearts[3].gameObject.SetActive(true);
+        //h_points.hearts[4].gameObject.SetActive(true);
 
+    }
+
+    public void Pause()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            pause_m.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
 

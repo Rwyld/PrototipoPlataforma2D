@@ -179,6 +179,7 @@ MonoBehaviour:
   rangeAttack: 0
   rangePlayer: 0
   MoveAttack: 0
+  TimeDeath: 1.5
   speed: 100
 --- !u!1 &7914226660975316091
 GameObject:

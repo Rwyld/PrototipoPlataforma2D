@@ -11,7 +11,7 @@ public class Press : MonoBehaviour
     {
         transform.Translate(0f, -2f * Time.deltaTime, 0f);
         GameEvents.Ev.PlatformActive();
-        AirPlatform.SetActive(true);
+        AirPlatform.SetActive(false);
     }
 
 

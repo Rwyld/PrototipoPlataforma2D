@@ -218,4 +218,5 @@ MonoBehaviour:
   rangeAttack: 0
   rangePlayer: 0
   MoveAttack: 8
-  speed: 300
+  TimeDeath: 0.8
+  speed: 20

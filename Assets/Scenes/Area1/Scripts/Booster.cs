@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Booster : MonoBehaviour
 {
-    public MoveScript player;
+    public Player player;
+    public int H_points;
+
+
+
     void Start()
     {
         GameEvents.Ev.Boost += GainHealth;
@@ -13,13 +17,18 @@ public class Booster : MonoBehaviour
 
     private void GainHealth()
     {
-        player.health += 1;
-        Debug.LogError("Ahora tienes " + player.health + " puntos de vida");
-        gameObject.SetActive(false);
+            player.health += H_points;
+            Debug.LogError("Ahora tienes " + player.health + " puntos de vida");
+            gameObject.SetActive(false);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GainHealth();
+
+        if (player.health < 5)
+        {
+            GainHealth();
+        }
     }
 }

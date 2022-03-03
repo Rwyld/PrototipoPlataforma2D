@@ -2,12 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HealthPoints : MonoBehaviour
 {
+    public static HealthPoints Instance;
     public GameObject[] hearts;
-    [SerializeField] private MoveScript player;
     public int i = 4;
+    public TextMeshProUGUI textH;
+    public float health;
+    public Player player;
+
+    private void Start()
+    {
+        if (Instance == null)
+            Instance = this;
+    }
 
     private void Update()
     {
@@ -18,9 +28,17 @@ public class HealthPoints : MonoBehaviour
             i--;
 
         }
-        
-    }
 
+        Score();
+
+    }
+   
+
+    public void Score()
+    {
+        health = player.health;
+        textH.text = health.ToString();
+    }
 
 
 

@@ -26,6 +26,7 @@ public class Enemy1 : MonoBehaviour
     public float rangeAttack;
     public float rangePlayer;
     public float MoveAttack;
+    public float TimeDeath;
     [SerializeField] private float speed;
 
 
@@ -52,7 +53,7 @@ public class Enemy1 : MonoBehaviour
     private void Die()
     {
         animator.SetInteger("Health", 0);
-        Destroy(gameObject, 1.5f);
+        Destroy(gameObject, TimeDeath);
     }
 
 

@@ -41,7 +41,6 @@ public class Player : MonoBehaviour
         moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2 (moveInput * speed, rb.velocity.y);
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
-
     }
 
     void Update()
@@ -90,8 +89,10 @@ public class Player : MonoBehaviour
             jumping = false;
             animator.SetBool("Jumping", false);
         }
-                
 
+        GM.Pause();
     }
+
+
 
 }

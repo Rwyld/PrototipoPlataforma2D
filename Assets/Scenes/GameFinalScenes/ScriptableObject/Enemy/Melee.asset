@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Melee
   m_EditorClassIdentifier: 
   speed: 300
-  health: 4
+  health: 1
   damageDeal: 1

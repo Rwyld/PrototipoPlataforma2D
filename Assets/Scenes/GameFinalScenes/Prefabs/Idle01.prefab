@@ -219,6 +219,7 @@ MonoBehaviour:
   rangeAttack: 0
   rangePlayer: 0
   MoveAttack: 100
+  TimeDeath: 1
   speed: 50
 --- !u!1001 &1140491182036190818
 PrefabInstance:

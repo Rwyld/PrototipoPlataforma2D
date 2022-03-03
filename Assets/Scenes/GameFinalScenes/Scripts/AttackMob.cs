@@ -9,6 +9,7 @@ public class AttackMob : MonoBehaviour
     public Rigidbody2D rb;
     public bool isMelee;
     public float time_off;
+
     void Start()
     {
 
@@ -21,7 +22,7 @@ public class AttackMob : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        MoveScript player = collision.GetComponent<MoveScript>();
+        Player player = collision.GetComponent<Player>();
 
 
         if (player != null)

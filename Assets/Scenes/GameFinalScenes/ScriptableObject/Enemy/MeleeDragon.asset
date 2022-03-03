@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MeleeDragon
   m_EditorClassIdentifier: 
   speed: 500
-  health: 3
+  health: 1
   damageDeal: 1

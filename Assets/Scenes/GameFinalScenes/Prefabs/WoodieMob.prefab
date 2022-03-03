@@ -207,5 +207,6 @@ MonoBehaviour:
     m_Bits: 8
   rangeAttack: 0
   rangePlayer: 0
-  MoveAttack: 10
-  speed: 500
+  MoveAttack: 5
+  TimeDeath: 1.2
+  speed: 150
