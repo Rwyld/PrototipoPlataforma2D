@@ -3,12 +3,12 @@
 
 ```shell
 
-Proyecto personal con objetivo de funcionalidades en un videojuego de plataforma 2D
+Proyecto personal con objetivo de funcionalidades en un prototipo de videojuego de plataforma 2D
 
 Irregularidades:
-1.- Carece de graficos/dibujos
+1.- Carece de gráficos/dibujos
 2.- Bugs sin resolver
 
-Sprites y musica utilizados desde Ragnarok Online
+Sprites y música utilizados desde Ragnarok Online
 
 ```
